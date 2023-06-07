@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141935;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+  color:antiquewhite;
+  text-align: center;
+  vertical-align: center; 
+  margin-top: 6%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-shadow: rgba(228, 228, 226, 0.5) 1px 0 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;  
+}
+
+
+#container {
+    width: 50%;
+    height: 400px;
+    margin: 3% auto;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-shadow: 0 0 40px 0 rgba(179, 179, 180, 0.6);
+}
+
+#left {
+    width: 40%;
+    height: 400px;
+    background-color: #424769;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    
+}
+
+#right {
+    width: 60%;
+    height: 400px; 
+    background-image: url('https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;  
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: rgba(228, 228, 226, 0.5) 1px 0 10px;
+    color: #FFF;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    color:#FFF;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+input {
+    background-color: #ecd4ea;
+    color:#0a0f44; 
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 10%;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 4%;
+    outline: none;
+} 
+
+input:focus{
+    background-color: #b276b3; 
+    color: white; 
+    border: 1px solid white;
+
+}
+ 
+
+#left p {
+    font-size: 0.6em;
+    text-align: left;
+    margin: 0 10% 5% 10%;
+}
+
+#button {
+    background: linear-gradient( #843286, #511f52, #843286);
+    color: #ecd4ea;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: color 0.4s;
+    width: 80%;
+    height: 10%;
+    padding: 4%;
+    box-shadow: 0 0 2px 2px rgb(41, 41, 41), inset 0 0 0px 2px rgb(226, 225, 225, 0.3) ; 
+}
+
+#button:hover {
+    background: linear-gradient( #511f52, #843286, #511f52);
+    color: #fffdff;
+    box-shadow: 0 0 10px 2px rgba(239, 237, 237, 0.5), inset 0 0 0px 2px rgb(226, 225, 225, 0.3);
+}
+
+@media only screen and (min-width: 1450px), (max-width: 1400px) {
+    #button{
+        padding: 2%;  
+    }  
+}
+
+@media only screen and (max-width: 840px) {
+    #left{
+        width: 60%;  
+    }
+
+    #right{
+        background-position: center;
+    }
+    
+    #button{
+        font-size: 0.8em;
+    }
+    
+}
+
+@media only screen and (min-width: 485px) and (max-width: 680px) {
+    input{
+        font-size: 0.7em;
+    }
+    #button{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1{
+        margin-top: 20%;
+    }
+
+    #container{
+        height: 500px;
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    #left{
+        align-self: flex-end;
+        justify-self: flex-end;
+        width: 100%;
+        border-top-left-radius: unset;
+        border-bottom-right-radius: 20px; 
+    }
+
+    #right{
+        background-position: bottom;
+        width: 100%;
+        height: 30%;
+        align-self: flex-start;
+        justify-self: flex-start;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: unset;
+    }
+
+    form p {
+        font-size: 0.5em;
+    }
+
+    #button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+
+
+
+
+
+
